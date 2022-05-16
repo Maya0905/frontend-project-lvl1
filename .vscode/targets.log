@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 15 13:30:29 2022
+# Make data base, printed on Mon May 16 17:30:42 2022
 
 # Variables
 
@@ -28,9 +28,6 @@ VSCODE_LOG_NATIVE = false
 @F = $(notdir $@)
 # makefile
 CURDIR := /home/maya/frontend-project-lvl1
- 
-make: *** No rule to make target 'all'.  Stop.
-
 # makefile
 SHELL = /bin/sh
 # environment
@@ -56,7 +53,7 @@ PATH = /home/maya/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bi
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ab204b8f-5365-463d-8275-f3c0188d6e53.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-4a2516c8-cf47-4f36-8336-afa1833a023f.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -233,6 +230,8 @@ install:
 # strcache performance: lookups = 33 / hit rate = 27%
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=1/33=3%
-# Finished Make data base on Sun May 15 13:30:29 2022
+# Finished Make data base on Mon May 16 17:30:42 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+
