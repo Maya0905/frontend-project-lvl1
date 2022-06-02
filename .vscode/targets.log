@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 24 13:24:15 2022
+# Make data base, printed on Thu Jun  2 16:37:31 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ PATH = /home/maya/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bi
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-b2f195bb-393a-4d88-9b82-35aec1004fa3.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-dfb08d86-e58e-4d7b-8b43-0bf9bb706814.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -75,7 +75,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = maya
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -95,7 +95,7 @@ USER = maya
 # makefile
 .DEFAULT_GOAL := install
 # environment
-NAME = DESKTOP-PN6HG8L
+NAME = PK
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -178,9 +178,23 @@ brain-games:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-15 12:58:08.3366237
+#  Last modified 2022-06-02 13:53:04.51571
 #  File has been updated.
 #  Successfully updated.
+
+makeshift:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	node bin/makeshift.js	
+
+brain-calc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 12):
+	node bin/brain-calc.js	
 
 # Not a target:
 .DEFAULT:
@@ -217,20 +231,20 @@ install:
 	nmp ci
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/19=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 221 B / avg = 9 B
-# current buf: size = 8162 B / used = 221 B / count = 24 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 242 B / avg = 9 B
+# current buf: size = 8162 B / used = 242 B / count = 26 / avg = 9 B
 
-# strcache performance: lookups = 33 / hit rate = 27%
+# strcache performance: lookups = 37 / hit rate = 29%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=1/33=3%
-# Finished Make data base on Tue May 24 13:24:15 2022
+# Load=26/8192=0%, Rehash=0, Collisions=1/37=3%
+# Finished Make data base on Thu Jun  2 16:37:31 2022
 
  
 make: *** No rule to make target 'all'.  Stop.
