@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun  4 00:16:32 2022
+# Make data base, printed on Sat Jun  4 12:02:25 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ PATH = /home/maya/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bi
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-5968155f-fccc-4121-aa0c-778ca4c57caa.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e50dfc12-40ec-4797-a5b1-4bdcc667a271.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -75,7 +75,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = maya
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -161,6 +161,13 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Files
 
+brain-prime:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 18):
+	node bin/brain-prime.js
+
 # Not a target:
 all:
 #  Command line target.
@@ -185,7 +192,7 @@ brain-games:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-03 23:01:38.4604934
+#  Last modified 2022-06-04 12:00:40.4379195
 #  File has been updated.
 #  Successfully updated.
 
@@ -238,20 +245,20 @@ install:
 	nmp ci
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/22=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/23=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 260 B / avg = 9 B
-# current buf: size = 8162 B / used = 260 B / count = 27 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 272 B / avg = 9 B
+# current buf: size = 8162 B / used = 272 B / count = 28 / avg = 9 B
 
-# strcache performance: lookups = 39 / hit rate = 30%
+# strcache performance: lookups = 41 / hit rate = 31%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=1/39=3%
-# Finished Make data base on Sat Jun  4 00:16:32 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/41=2%
+# Finished Make data base on Sat Jun  4 12:02:25 2022
 
  
 make: *** No rule to make target 'all'.  Stop.
