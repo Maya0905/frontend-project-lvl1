@@ -1,17 +1,31 @@
 import getRandomNumber from "../utils/randomNumber.js";
-
-export default () => {
-    const sequencelength = getRandomNumber(5, 10);
-    let startNumber = getRandomNumber(0, 20);
-    const diff = getRandomNumber(0, 10);
-    let sequence = [startNumber];
+import startGame from '../index.js';
+const getSequence = () => {
+    const sequenceBeginStart = 0;
+    const sequenceBeginEnd = 20;
+    let sequenceBegin = getRandomNumber(sequenceBeginStart, sequenceBeginEnd);
+    const sequenceStart = 5;
+    const sequenceEnd = 10;
+    const sequencelength = getRandomNumber(sequenceStart, sequenceEnd);
+    const diffStart = 0;
+    const diffEnd = 10;
+    const diff = getRandomNumber(diffStart, diffEnd);
+    let sequence = [sequenceBegin];
     for (let i = 0; i <= sequencelength; i += 1) {
-        startNumber += diff;
-        sequence.push(startNumber);
+        sequenceBegin += diff;
+        sequence.push(sequenceBegin);
     }
-    const index = getRandomNumber(0, sequencelength);
-    const result = sequence[index]
+    return sequence;
+};
+
+const progressionGame = () => {
+    const sequence = getSequence();
+    const index = getRandomNumber(0, sequence.length - 1);
+    const answer = sequence[index]
+    const result = String(answer);
     sequence[index] = '..';
     const mission = sequence.join(' ');
     return [mission, result];
 };
+
+export default () => startGame('What number is missing in the progression?', progressionGame);

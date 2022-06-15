@@ -21,7 +21,7 @@ export default (question, game) => {
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-      break;
+      return;
     }
   }
 };

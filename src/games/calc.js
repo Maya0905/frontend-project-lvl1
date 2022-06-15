@@ -1,30 +1,36 @@
 import getRandomNumber from '../utils/randomNumber.js';
+import startGame from '../index.js';
 
-const getRandomOperator = () => {
+const getRandomOperator = (index) => {
   const signs = ['-', '+', '*'];
-  const index = getRandomNumber(0, 2);
   return signs[index];
 };
 
 const calculate = (x, y, sign) => {
-  let result = 0;
-  if (sign === '-') {
-    result = x - y;
+  switch (sign) {
+    case '-':
+      return x - y;
+    case '+':
+      return x + y;
+    case '*':
+      return x * y
+    default:
+      throw new Error('The sign is incorrect')
   }
-  if (sign === '+') {
-    result = x + y;
-  }
-  if (sign === '*') {
-    result = x * y;
-  }
-  return result;
 };
 
-export default () => {
+
+const brainCalc = () => {
   const a = getRandomNumber();
   const b = getRandomNumber();
-  const sign = getRandomOperator();
+  const indexStart = 0;
+  const indexEnd = 2;
+  const sign = getRandomOperator(indexStart, indexEnd);
   const mission = `${a} ${sign} ${b}`;
-  const result = calculate(a, b, sign);
+  const answer = calculate(a, b, sign);
+  const result = String(answer);
   return [mission, result];
 };
+
+export default () => startGame('What is the result of the expression?', brainCalc);
+
