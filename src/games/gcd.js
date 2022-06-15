@@ -1,5 +1,5 @@
 import getRandomNumber from "../utils/randomNumber.js"
-import startGame from './index.js';
+import startGame from '../index.js';
 
 const gcd = (x, y) => {
     while (y !== 0) y = x % (x = y);
