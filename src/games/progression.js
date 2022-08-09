@@ -1,5 +1,6 @@
 import getRandomNumber from '../utils/randomNumber.js';
 import startGame from '../index.js';
+
 const getSequence = () => {
   const sequenceBeginStart = 0;
   const sequenceBeginEnd = 20;

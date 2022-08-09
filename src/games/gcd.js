@@ -8,14 +8,14 @@ const gcd = (x, y) => {
   return a;
 };
 
-  const gcdGame = () => {
+const gcdGame = () => {
   const a = getRandomNumber();
   const b = getRandomNumber();
   const mission = `${a} ${b}`;
   const answer = gcd(a, b);
   const result = String(answer);
 
-    return [mission, result];
+  return [mission, result];
 };
 
 export default () => startGame('Find the greatest common divisor of given numbers.', gcdGame);
