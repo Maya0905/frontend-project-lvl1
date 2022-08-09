@@ -13,12 +13,11 @@ const calculate = (x, y, sign) => {
     case '+':
       return x + y;
     case '*':
-      return x * y
+      return x * y;
     default:
-      throw new Error('The sign is incorrect')
+      throw new Error('The sign is incorrect');
   }
 };
-
 
 const brainCalc = () => {
   const a = getRandomNumber();
@@ -33,4 +32,3 @@ const brainCalc = () => {
 };
 
 export default () => startGame('What is the result of the expression?', brainCalc);
-
