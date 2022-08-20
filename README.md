@@ -1,9 +1,14 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Maya0905/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Maya0905/frontend-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/824faa93434e34f1cb4f/maintainability)](https://codeclimate.com/github/Maya0905/frontend-project-lvl1/maintainability)
+
+# System requirements
+Node version: 16.^
+
 ## Getting started
 ```
-git clone
+git clone https://github.com/Maya0905/frontend-project-lvl1.git
+npm install 
 npm link
 ```
 ## Demo

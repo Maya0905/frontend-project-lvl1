@@ -1,4 +1,4 @@
-import getRandomNumber from '../utils/randomNumber.js';
+import { getRandomNumber } from '../utils';
 import startGame from '../index.js';
 
 const getSequence = () => {
@@ -19,7 +19,7 @@ const getSequence = () => {
   return sequence;
 };
 
-const progressionGame = () => {
+const generateRound = () => {
   const sequence = getSequence();
   const index = getRandomNumber(0, sequence.length - 1);
   const answer = sequence[index];
@@ -29,4 +29,4 @@ const progressionGame = () => {
   return [mission, result];
 };
 
-export default () => startGame('What number is missing in the progression?', progressionGame);
+export default () => startGame('What number is missing in the progression?', generateRound);
